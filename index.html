@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Central Comunicação</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="css/reset.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+          },
+          fontFamily: {
+            primary: ['inter'],
+            secondary: ['poppins']
+          },
+          fontSize: {
+            th: '0.422rem',
+            lt: '0.563rem',
+            sm: '0.75rem',
+            base: '1rem',
+            md: '1.333rem',
+            lg: '1.777rem',
+            xl: '2.369rem',
+            xl2: '2.829rem',
+            xl3: '3.157rem',
+            xl4: '4.209rem',
+          },
+          keyframes: {
+            topForBottom: {
+              '0%': {
+                transform: ''
+              }
+            }
+          }
+        }
+      }
+    }
+  </script>
+
+  <script defer src="./js/menu.js"></script>
+
+
+  <style type="text/tailwindcss">
+    @layer utilities {
+      .content-auto {
+        content-visibility: auto;
+      }
+    }
+
+    .hover-li a:hover {
+      color: rgb(15 23 42);
+      cursor: pointer;
+      transition: all 340ms;
+    }
+
+    .or::after {
+      content: '';
+      height: 2px;
+      align-self: center;
+      width: 45%;
+      background: #000;
+      border-radius: 999999px;
+
+    }
+
+    .or::before {
+      content: '';
+      height: 2px;
+      align-self: center;
+      width: 45%;
+      background: #000;
+      border-radius: 999999px;
+    }
+    
+
+  </style>
+</head>
+
+<body class="font-secondary">
+  <header
+    class="w-full h-20 px-8 flex items-center fixed inset-0 bg-white drop-shadow-md lg:static lg:drop-shadow-none">
+    <div class="w-full flex justify-between items-center">
+      <div class="w-40 h-10 bg-gray-800 flex">
+        <img class="logo-img" src="./assets/logo-white.png" alt="Logomarca Central">
+      </div>
+
+      <!-- BURGUER ICON -->
+      <div class="flex flex-col gap-y-0.5 cursor-pointer lg:hidden" data-menu="icon">
+        <div class="w-6 h-1 bg-slate-600 rounded-lg"></div>
+        <div class="w-6 h-1 bg-slate-600 rounded-lg"></div>
+        <div class="w-6 h-1 bg-slate-600 rounded-lg"></div>
+      </div>
+
+      <!-- DESKTOP MENU -->
+      <nav class="hidden items-center gap-x-16 text-sm font-bold lg:flex">
+        <ul class="flex gap-x-10 hover-li">
+          <a class="text-slate-600" href="">
+            <li> Front e Triedos </li>
+          </a>
+          <a href="" class="text-slate-600">
+            <li> Sobre Nós </li>
+          </a>
+          <a class="text-slate-600" href="">
+            <li> Parceiros </li>
+          </a>
+          <a class="text-slate-600" href="">
+            <li> Serviços </li>
+          </a>
+        </ul>
+
+        <div class="hidden gap-x-6 items-center md:flex">
+          <div>
+            <button class="px-6 py-3 text-slate-400 bg-transparent border-2 border-slate-400 rounded-xl">
+              Login ADM
+            </button>
+          </div>
+          <div>
+            <button class="px-6 py-3 text-white bg-slate-400 border-2 border-slate-400 rounded-xl">
+              Whatsapp
+            </button>
+          </div>
+        </div>
+      </nav>
+
+      <!-- MENU MOBILE -->
+      <div class="fixed inset-0 mt-20">
+        <nav data-menu="mobile" class="h-0 overflow-hidden items-center gap-x-16 bg-white text-sm font-bold lg:hidden">
+          <div class="px-6 h-full pt-8">
+            <ul class="flex flex-col gap-y-6 hover-li">
+              <a class="text-slate-600 text-base flex" href="">
+                <li> Front e Triedos </li>
+              </a>
+              <a href="" class="text-slate-600 text-base flex">
+                <li> Sobre Nós </li>
+              </a>
+              <a class="text-slate-600 text-base flex" href="">
+                <li> Parceiros </li>
+              </a>
+              <a class="text-slate-600 text-base flex" href="">
+                <li> Serviços </li>
+              </a>
+            </ul>
+
+            <div class="flex gap-x-6 items-center mt-8">
+              <div>
+                <button class="px-6 py-3 text-slate-400 bg-transparent border-2 border-slate-400 rounded-xl">
+                  Login ADM
+                </button>
+              </div>
+              <div>
+                <button class="px-6 py-3 text-white bg-slate-400 border-2 border-slate-400 rounded-xl">
+                  Fale Conosco!
+                </button>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+
+    </div>
+  </header>
+
+  <div class="max-w-[1560px] m-auto mt-20 lg:mt-0">
+    <main>
+      <section id="home" class="h-[calc(100vh-5rem)] flex">
+        <div class="w-[43%] flex flex-col gap-8 justify-center items-start px-12">
+          <div class="flex flex-col gap-4">
+            <h1 class="text-xl2 font-extrabold leading-tight 2xl:text-xl3">
+              Central<br />Comunicação
+            </h1>
+
+            <p class="text-base font-normal 2xl:text-md">
+              Comunicação visual e mídia exterior<br />dando visibilidade para o seu negócio
+            </p>
+          </div>
+          <form class="w-4/5 flex flex-col gap-6" action="">
+            <input class="w-full h-12 bg-slate-300 text-[14px] rounded-lg px-4 py-3 outline-none" type="email" placeholder="Seu email para contato">
+
+            <div class="flex gap-x-2 2xl:gap-x-4">
+              <button class="px-6 h-12 text-base bg-slate-300 rounded-lg outline:none">
+                Ganhar agora!
+              </button>
+              <div class="flex flex-col justify-between font-semibold text-base 2xl:text-[18px]">
+                <p>Preencha o email e ganhe</p>
+                <p>um orçamento!</p>
+              </div>
+            </div>
+
+            <p class="or flex justify-between items-center h-4">
+              ou
+            </p>
+
+            <button class="w-full py-3 flex justify-center gap-4 text-base bg-slate-300 rounded-lg">
+              <img src="./assets/wpp.svg" alt="">
+              Falar por Whatsapp
+            </button>
+          </form>
+        </div>
+
+        <div class="flex flex-1 bg-yellow-500 2xl:bg-green-500">
+          ...
+        </div>
+      </section>
+
+      <!-- second section -->
+      <section class="h-screen flex bg-red-500">
+        <div class="w-2/5 flex flex-col gap-10 justify-center items-start">
+          <h1 class="text-xl2 font-extrabold leading-tight">
+            Central<br />Comunicação
+          </h1>
+          <p class="text-md font-normal">
+            Comunicação visual e mídia exterior<br />dando visibilidade para o seu negócio
+          </p>
+          <!-- <form class="w-full" action="">
+            <input class="w-5/6 text-sm bg-slate-300 rounded-lg py-6 outline:none" type="text" placeholder="Seu email para contato" />
+          </form> -->
+        </div>
+        <div class="flex flex-1 0bg-yellow-500">
+          ...
+        </div>
+      </section>
+    </main>
+  </div>
+</body>
+
+</html>
