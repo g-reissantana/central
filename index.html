@@ -90,115 +90,8 @@
       background: #000;
       border-radius: 999999px;
     }
+
     
-    .ball {
-      background-color: aquamarine;
-      height: 120px;
-      width: 120px;
-      border-radius: 9999999px;
-    }
-
-    .big-ball {
-      position: absolute;
-      background-color: aquamarine;
-      height: 240px;
-      width: 240px;
-      border-radius: 9999999px;
-      animation: big_ball 1s linear infinite;
-    }
-
-    @keyframes big_ball {
-      0% {
-        transform: scale(0);
-        opacity: 0;
-      } 
-      50% {
-        /* opacity: ; */
-      }
-      100% {
-        transform: scale(1.2);
-        opacity: 1;
-      }
-    }
-
-    @keyframes ball_1 {
-      0% {
-        transform: scale(1);
-        transform: translateX(0px);
-        opacity: 1;
-      } 
-      50% {
-        transform: translateX(70px);
-        opacity: .2;
-      }
-      75% {
-        transform: scale(0);
-        opacity: 0;
-        display: none;
-      }
-      100% {
-        transform: translateX(0px);
-        opacity: 0;
-      } 
-    }
-
-    @keyframes ball_2 {
-      0% {
-        transform: scale(1);
-        transform: translatey(-70px);
-        opacity: 1;
-      } 
-      50% {
-        transform: translatey(0px);
-        opacity: .2;
-      }
-      75% {
-        transform: scale(0);
-        opacity: 0;
-        display: none;
-      }
-      100% {
-        transform: translatey(-70px);
-        opacity: 0;
-      } 
-    }
-
-    @keyframes ball_3 {
-      0% {
-        transform: scale(1);
-        transform: translateX(0px);
-        opacity: 1;
-      } 
-      50% {
-        transform: translateX(-70px);
-        opacity: .2;
-      }
-      75% {
-        transform: scale(0);
-
-        opacity: 0;
-        display: none;
-      }
-      100% {
-        transform: translateX(0px);
-        opacity: 0;
-      } 
-    }
-
-    .ball-1 {
-      animation: ball_1 1s linear infinite;
-    }
-
-    .ball-2 {
-      transform: translateY(-70px);  
-      animation: ball_2 1s linear infinite;
-    }
-
-    .ball-3 {
-      animation: ball_3 1s linear infinite;
-
-    }
-
   </style>
 </head>
 
@@ -380,13 +273,6 @@
             <h1 class="font-semibold text-xl md:text-xl3 2xl:text-xl4"> + VISIBILIDADE</h1>
             <h1 class="font-semibold text-xl md:text-xl3 2xl:text-xl4"> + CLIENTES</h1>
             <h1 class="font-semibold text-xl md:text-xl3 2xl:text-xl4"> = FATURAMENTO</h1>
-          </div>
-          <!-- BALLS ANIMATE -->
-          <div class="flex justify-center">
-            <div class="ball ball-1"></div>
-            <div class="ball ball-2"></div>
-            <div class="ball ball-3"></div>
-            <div class="big-ball"></div>
           </div>
         </div>
       </section>
