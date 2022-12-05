@@ -5,6 +5,8 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Quer aumentar o faturamento da sua empresa? Fachadas,banners e muito mais para a identidade visual da sua marca. Clique e ganhe um orçamento gratuitamente!">
   <title>Central Comunicação</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -50,7 +52,7 @@
     }
   </script>
 
-  <script defer src="./js/menu.js"></script>
+  <script defer src="./js/styles.js"></script>
 
 
   <style type="text/tailwindcss">
@@ -58,6 +60,10 @@
       .content-auto {
         content-visibility: auto;
       }
+    }
+
+    html {
+      scroll-behavior: smooth;
     }
 
     .hover-li a:hover {
@@ -72,7 +78,7 @@
       align-self: center;
       width: 45%;
       background: #000;
-      border-radius: 999999px;
+      border-radius: 9999px;
 
     }
 
@@ -84,8 +90,8 @@
       background: #000;
       border-radius: 999999px;
     }
-    
 
+    
   </style>
 </head>
 
@@ -105,31 +111,31 @@
       </div>
 
       <!-- DESKTOP MENU -->
-      <nav class="hidden items-center gap-x-16 text-sm font-bold lg:flex">
-        <ul class="flex gap-x-10 hover-li">
-          <a class="text-slate-600" href="">
-            <li> Front e Triedos </li>
+      <nav class="hidden items-center gap-x-10 text-sm font-bold lg:flex">
+        <ul class="flex gap-x-8 hover-li">
+          <a class="text-slate-600" href="#home">
+            <li> Home </li>
           </a>
-          <a href="" class="text-slate-600">
-            <li> Sobre Nós </li>
-          </a>
-          <a class="text-slate-600" href="">
+          <a class="text-slate-600" href="#partners">
             <li> Parceiros </li>
           </a>
-          <a class="text-slate-600" href="">
+          <a class="text-slate-600" href="#services">
             <li> Serviços </li>
+          </a>
+          <a class="text-slate-600" href="#about">
+            <li> Sobre Nós </li>
           </a>
         </ul>
 
         <div class="hidden gap-x-6 items-center md:flex">
           <div>
             <button class="px-6 py-3 text-slate-400 bg-transparent border-2 border-slate-400 rounded-xl">
-              Login ADM
+              Front e Triedos
             </button>
           </div>
           <div>
             <button class="px-6 py-3 text-white bg-slate-400 border-2 border-slate-400 rounded-xl">
-              Fale Conosco!
+              Login ADM
             </button>
           </div>
         </div>
@@ -140,29 +146,29 @@
         <nav data-menu="mobile" class="h-0 overflow-hidden items-center gap-x-16 bg-white text-sm font-bold lg:hidden">
           <div class="px-6 h-full pt-8">
             <ul class="flex flex-col gap-y-6 hover-li">
-              <a class="text-slate-600 text-base flex" href="">
-                <li> Front e Triedos </li>
+              <a class="text-slate-600 text-base flex" href="#home">
+                <li> Home </li>
               </a>
-              <a href="" class="text-slate-600 text-base flex">
-                <li> Sobre Nós </li>
-              </a>
-              <a class="text-slate-600 text-base flex" href="">
+              <a class="text-slate-600 text-base flex" href="#partners">
                 <li> Parceiros </li>
               </a>
-              <a class="text-slate-600 text-base flex" href="">
+              <a class="text-slate-600 text-base flex" href="#services">
                 <li> Serviços </li>
+              </a>
+              <a class="text-slate-600 text-base flex" href="#about">
+                <li> Sobre Nós </li>
               </a>
             </ul>
 
             <div class="flex gap-x-6 items-center mt-8">
               <div>
                 <button class="px-6 py-3 text-slate-400 bg-transparent border-2 border-slate-400 rounded-xl">
-                  Login ADM
+                  Front e Triedos
                 </button>
               </div>
               <div>
                 <button class="px-6 py-3 text-white bg-slate-400 border-2 border-slate-400 rounded-xl">
-                  Fale Conosco!
+                  Login ADM
                 </button>
               </div>
             </div>
@@ -173,10 +179,11 @@
     </div>
   </header>
 
-  <div class="max-w-[1560px] m-auto mt-20 lg:mt-0">
+  <div class="max-w-[1560px] m-auto mt-20 lg:mt-0 overflow-x-hidden">
     <main>
-      <section id="home" class="h-[calc(100vh-5rem)] flex">
-        <div class="w-full lg:w-[43%] flex flex-col gap-8 items-center pt-8 px-6 xl:px-12 sm:items-start sm:justify-center lg:pt-0">
+      <section id="home" class="lg:h-[calc(100vh-5rem)] flex">
+        <div
+          class="w-full lg:w-[43%] flex flex-col gap-8 items-center pt-8 max-lg:py-8 px-6 xl:px-12 sm:items-start sm:justify-center lg:pt-0">
 
           <div class="flex flex-col gap-4">
             <h1 class="text-xl2 font-extrabold leading-tight 2xl:text-xl3">
@@ -191,7 +198,8 @@
             </p>
           </div>
           <form class="w-full xl:w-4/5 flex flex-col gap-6" action="">
-            <input class="w-full h-12 bg-slate-300 text-[14px] rounded-lg px-4 py-3 outline-none" type="email" placeholder="Seu email para contato">
+            <input class="w-full h-12 bg-slate-300 text-[14px] rounded-lg px-4 py-3 outline-none" type="email"
+              placeholder="Seu email para contato">
 
             <div class="flex flex-col gap-4 lg:gap-2 2xl:gap-x-4 sm:flex-row">
               <button class="px-6 h-12 text-base bg-slate-300 rounded-lg outline:none">
@@ -220,22 +228,83 @@
       </section>
 
       <!-- second section -->
-      <section class="h-screen flex bg-red-500">
-        <div class="w-2/5 flex flex-col gap-10 justify-center items-start">
-          <h1 class="text-xl2 font-extrabold leading-tight">
-            Central<br />Comunicação
-          </h1>
-          <p class="text-md font-normal">
-            Comunicação visual e mídia exterior<br />dando visibilidade para o seu negócio
-          </p>
-          <!-- <form class="w-full" action="">
-            <input class="w-5/6 text-sm bg-slate-300 rounded-lg py-6 outline:none" type="text" placeholder="Seu email para contato" />
-          </form> -->
+      <section id="partners" class="h-screen p-2 px-4 xl:px-12 flex flex-col bg-red-500">
+        <div class="flex flex-col items-center mb-6">
+          <h1 class="text-lg font-bold">Nossos clientes</h1>
+          <h3 class="text-sm text-slate-50">Marcas que confiam na Central</h3>
         </div>
-        <div class="flex flex-1 0bg-yellow-500">
-          ...
+        <!-- CAROUSEL -->
+        <div class="w-[4000px] mb-20">
+          <div class="w-[66rem] overflow-x-hidden">
+            <div data-slider="sliders" class="w-full flex gap-4">
+              <div class="min-w-[10rem] min-h-14 rounded-lg bg-slate-200">
+                <img src="" alt=""></img>
+              </div>
+              <div class="min-w-[10rem] h-14 rounded-lg bg-slate-500">
+                <img src="" alt=""></img>
+              </div>
+              <div class="min-w-[10rem] h-14 rounded-lg bg-green-500">
+                <img src="" alt=""></img>
+              </div>
+              <div class="min-w-[10rem] min-h-14 rounded-lg bg-slate-200">
+                <img src="" alt=""></img>
+              </div>
+              <div class="min-w-[10rem] h-14 rounded-lg bg-slate-500">
+                <img src="" alt=""></img>
+              </div>
+              <div class="min-w-[10rem] h-14 rounded-lg bg-green-500">
+                <img src="" alt=""></img>
+              </div>
+              <div class="min-w-[10rem] min-h-14 rounded-lg bg-slate-200">
+                <img src="" alt=""></img>
+              </div>
+              <div class="min-w-[10rem] h-14 rounded-lg bg-slate-500">
+                <img src="" alt=""></img>
+              </div>
+              <div class="min-w-[10rem] h-14 rounded-lg bg-green-500">
+                <img src="" alt=""></img>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="h-full w-full flex max-sm:gap-6 sm:justify-around lg:px-16 max-md:flex-col max-md:items-center">
+          <div class="flex flex-col gap-2">
+            <h1 class="font-semibold text-xl md:text-xl3 2xl:text-xl4"> + VISIBILIDADE</h1>
+            <h1 class="font-semibold text-xl md:text-xl3 2xl:text-xl4"> + CLIENTES</h1>
+            <h1 class="font-semibold text-xl md:text-xl3 2xl:text-xl4"> = FATURAMENTO</h1>
+          </div>
         </div>
       </section>
+
+      <!-- <section id="services" class="h-screen p-2 flex bg-red-500">
+        <div class="flex gap-4">
+          <div class="w-40 h-14 rounded-lg bg-slate-300">
+            <img src="" alt=""></img>
+          </div>
+          <div class="w-40 h-14 rounded-lg bg-slate-300">
+            <img src="" alt=""></img>
+          </div>
+          <div class="w-40 h-14 rounded-lg bg-slate-300">
+            <img src="" alt=""></img>
+          </div>
+        </div>
+      </section> -->
+
+      <!-- <section id="about" class="h-screen p-2 flex bg-red-500">
+        <div class="flex gap-4">
+          <div class="w-40 h-14 rounded-lg bg-slate-300">
+            <img src="" alt=""></img>
+          </div>
+          <div class="w-40 h-14 rounded-lg bg-slate-300">
+            <img src="" alt=""></img>
+          </div>
+          <div class="w-40 h-14 rounded-lg bg-slate-300">
+            <img src="" alt=""></img>
+          </div>
+        </div>
+      </section> -->
+
     </main>
   </div>
 </body>
